@@ -1,3 +1,5 @@
+$mobile: 480px;
+
 .container{
   margin-top: 1rem;
   background-color: rgb(252, 246, 246);
@@ -13,10 +15,16 @@
   .info{
     display: flex;
     margin: 1rem 0 1rem 1rem;
+
     .profileImg{
       width: 3rem;
       border-radius: 30px;
+
+      @media screen and (max-width: $mobile){
+        border-radius: 20px;
+      }
     }
+
     .divInfo{
       margin: 0.1rem 0 0 1rem;
       .user{
