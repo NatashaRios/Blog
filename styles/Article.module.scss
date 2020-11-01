@@ -1,0 +1,53 @@
+.container{
+  background-color: rgb(252, 246, 246);
+  width: 60rem;
+  margin: 1rem auto;
+  border: 1px solid rgb(218, 216, 216);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 10px 10px #aaaaaa;
+
+  .coverImage{
+    width: 100%;
+  }
+  .title{
+    font-size: 2em;
+    font-weight: bolder;
+    margin-left: 5rem;
+    padding-top: 1rem;
+  }
+
+  .ul{
+    display: flex;
+    margin: 1rem 0 0 5rem;
+
+    .li{
+      margin-right: 0.5rem;
+    }
+  }
+
+  .user{
+    display: flex;
+    margin: 1.5rem 0 0 5rem;
+
+    .userImg{
+      width: 3rem;
+      border-radius: 30px;
+    }
+    .userName{
+      font-size: 1em;
+      font-weight: 500;
+      margin: 1rem 0 0 0.5rem;
+    }
+    .date{
+      font-size: 0.9em;
+      font-weight: 100;
+      margin: 1rem 0 0 1rem;
+    }
+  }
+
+  .text{
+    line-height: 1.5rem;
+    margin: 1.5rem;
+  }
+}
