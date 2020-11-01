@@ -1,3 +1,5 @@
+$ipad: 768px;
+$mobile: 480px;
 .container{
   background-color: rgb(252, 246, 246);
   width: 60rem;
@@ -6,6 +8,14 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 5px 10px 10px #aaaaaa;
+
+  @media screen and (max-width: $ipad){
+    width: 45rem;
+  }
+
+  @media screen and (max-width: $mobile){
+    width: 25rem;
+  }
 
   .coverImage{
     width: 100%;
