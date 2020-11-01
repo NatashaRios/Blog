@@ -1,5 +1,6 @@
 $ipad: 768px;
 $mobile: 480px;
+
 .container{
   background-color: rgb(252, 246, 246);
   width: 60rem;
@@ -43,6 +44,10 @@ $mobile: 480px;
     .userImg{
       width: 3rem;
       border-radius: 30px;
+
+      @media screen and (max-width: $mobile){
+        display: none;
+      }
     }
     .userName{
       font-size: 1em;
