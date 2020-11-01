@@ -1,0 +1,11 @@
+$mobile: 480px;
+
+.navbar{
+  display: flex;
+  background-color: rgb(252, 246, 246);
+  margin-bottom: 1rem;
+  
+  @media screen and (max-width: $mobile){
+    width: 30rem;
+  }
+}

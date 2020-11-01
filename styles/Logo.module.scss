@@ -1,0 +1,28 @@
+$ipadpro: 1024px;
+$ipad: 768px;
+$mobile: 480px;
+
+.logo{
+  width: 3.4rem;
+  height: 2.5rem;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  font-size: 1.2em;
+  padding: 0.7rem 0 0 0.6rem;
+  border-radius: 5px;
+  margin: 0.3rem 2rem 0.3rem 20rem;
+
+  @media screen and (max-width: $ipadpro){
+    margin-left: 10rem;
+  }
+
+  @media screen and (max-width: $ipad){
+    margin-left: 5rem;
+  }
+
+  @media screen and (max-width: $mobile){
+    margin-left: 2rem;
+    padding-right: 0.5rem;
+  }
+}
