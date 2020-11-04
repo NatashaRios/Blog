@@ -35,7 +35,7 @@ export default function DynamicRoute({ title, tags, content, coverImage, user, d
   
     return {
       paths: paths,
-      fallback: false
+      fallback: true
     };
   }
   
