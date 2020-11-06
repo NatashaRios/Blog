@@ -1,7 +1,7 @@
 import styles from '../../styles/Article.module.scss';
 
 export default function DynamicRoute({ title, tags, content, coverImage, user, date }) {
-  console.log(user)
+  
   return (
     <div className={styles.container}>
       <img className={styles.coverImage} src={coverImage} />
@@ -27,14 +27,14 @@ export default function DynamicRoute({ title, tags, content, coverImage, user, d
     const data = await fetch("https://dev.to/api/articles?tag=javascript&top=1");
     const json = await data.json();
   
-    // const paths = json.map(path => `/articulo/${path.id}`)
-  
-    const paths = json.map((path) => {
+    const paths = json.map(path => `/articulo/${path.id}`)
+    
+    /* const paths = json.map((path) => {
       return `/articulo/${path.id}`;
-    });
-  
+    }); */
+     
     return {
-      paths: paths,
+      paths,
       fallback: false
     };
   }
